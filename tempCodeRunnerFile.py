@@ -1,4 +1,14 @@
-import pandas as pd
-strata = pd.cut(data, bins=5)
-stratified_sample = pd.Series(data).groupby(strata).apply(lambda x: x.sample(10)).values
-print("Stratified Sample Mean:", np.mean(stratified_sample))
+import numpy as np
+
+data = np.random.normal(loc=50, scale=15, size=1000)
+
+data = np.array(data)
+
+q1 = np.percentile(data, 25)
+q3 = np.percentile(data, 75)
+
+iqr = q3 - q1
+
+outliers = data[(data < (q1 - 1.5 * iqr)) | (data > (q3 + 1.5 * iqr))]
+
+print(outliers)
