@@ -1,0 +1,10 @@
+my_list = list(range(1, 11)) 
+print("Initial list:", my_list)
+my_list.remove(5)
+my_list.append(11)
+print("After modifications:", my_list)
+squares = [x**2 for x in range(1, 11)]
+print("Squares:", squares)
+print("First 10:", my_list[:10])
+print("Last 5:", my_list[-5:])
+print("Every second element:", my_list[::2])
