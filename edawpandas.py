@@ -6,7 +6,7 @@ df = pd.DataFrame({
 })
 melted_df = pd.melt(df, id_vars=['student_id'], value_vars=['math', 'science'])
 print(melted_df)
-
+ #use of melt fucntion defines
 import pandas as pd
 df = pd.DataFrame({
  'student_id': [1, 1, 2, 2],
