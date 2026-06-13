@@ -1,5 +1,5 @@
 import sqlite3
-
+# database connected
 # 1. Connect to a database (creates 'example.db' if it doesn't exist)
 connection = sqlite3.connect('example.db')
 cursor = connection.cursor()
