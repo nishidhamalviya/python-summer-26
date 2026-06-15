@@ -1,6 +1,6 @@
 import numpy as np
 data = [10, 20, 30, 40, 50, 60, 70]
-
+#quarties,quantiles,percentiles
 quartiles = np.percentile(data, [25, 50, 75])
 print("Quartiles:", quartiles)
 quantiles = np.quantile(data, np.linspace(0.1, 0.9, 9))
