@@ -10,7 +10,7 @@ def read_file():
         print("an error occured")
 
 
-                
+                #exceptions
 
 def divide_numbers():
     try:
